@@ -1,0 +1,156 @@
+h1 {
+font-family: "Archivo Black", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+ text-align: center;
+ padding-left: 10%;
+ background: linear-gradient(to right, #6e1111, #0e0c44);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height:100px;
+    padding-bottom: 15px;
+}
+.navbar {
+    background-color:#6e1111;
+    overflow: hidden;
+    text-align: center; /* Align links to the right */
+}
+
+.navbar a {
+    display: inline-block; /* Display links inline */
+    color: #f2f2f2; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 14px 20px; /* Padding inside the links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+.col-1 h2{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 25px 0;
+}
+h4{
+    padding: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+    max-width: max-content;
+}
+.col-3 img{
+    width: 300px;
+    height: fit-content;
+    columns: repeat(3, 1fr);
+    gap: 500px;
+    max-width: auto;
+    justify-content: space-around;
+
+}
+.col-4 img{
+    width: 300px;
+    height: fit-content;
+  justify-content: space-between; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color:#6e1111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 5px 5pc 5px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,7;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.0em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
